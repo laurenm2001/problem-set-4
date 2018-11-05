@@ -22,6 +22,7 @@ public class ProblemSet4 {
 	
 	public static void main(String[] args) {
 		ProblemSet4 ps = new ProblemSet4();
+
 		//System.out.println(ps.surroundMe("<<>>", "abc"));
 		//System.out.println(ps.endsMeet("qwerty", 2));
 		//ps.middleMan("candy");
@@ -31,6 +32,14 @@ public class ProblemSet4 {
 		//System.out.println(ps.countMe("and some more sample words", '+'));
 		//System.out.println(ps.isNotEqual("is not is not is"));
 		System.out.println(ps.addMe("a123b456c789", false));
+		System.out.println(ps.surroundMe("two", "<<>>"));
+		System.out.println(ps.endsMeet("qwerty", 2));
+		System.out.println(ps.middleMan("candy"));
+		System.out.println(ps.doubleVision("qwerty"));
+		System.out.println(ps.centered("qwerty", "qwe"));
+		System.out.println(ps.upOrDown(12.2, 'r'));
+		System.out.println(ps.countMe("and some more sample words", '+'));
+		System.out.println(ps.isNotEqual("is not is not is"));
 	}
 	public String surroundMe(String in, String out) {
 		int lengthIn = in.length();
@@ -44,6 +53,7 @@ public class ProblemSet4 {
 		String outlast = in.substring(0, 2);
 		String outfirst = in.substring(2,4);
 		String together = outlast + out + outfirst;
+
 		return together;
 		}
 	}

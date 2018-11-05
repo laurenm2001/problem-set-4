@@ -94,7 +94,12 @@ endsMeet(null, 1) returns null
 
 Given a `String`, `str`, return a new 3-character `String` built from the 3 middle characters of `str`. Return `null` if the following specifications are not met.
 * `str` must not be `null`
+<<<<<<< HEAD
 * the lenght of `str` must be odd
+=======
+* the length of `str` must be odd
+* `str` must be at least 3 characters
+>>>>>>> 94f84aa0624d00b40663713341e10cbbd624f89c
 
 ```
 middleMan("candy") returns and
@@ -122,6 +127,10 @@ doubleVision(null) returns null
 
 Given two `String`s, `str` and `target`,  determine whether or not `target` is in the middle of `str`. `target` will be considered in the middle of `str` if the number of characters to its left and right differ by 0 or 1. Return `false` if the following specifcations are not met.
 * `str` and `target` must not be `null`
+<<<<<<< HEAD
+=======
+* `str` must be at least 3 characters
+>>>>>>> 94f84aa0624d00b40663713341e10cbbd624f89c
 * `target` must be exactly 3 characters
 
 ```
@@ -138,8 +147,13 @@ centered(null, null) returns false
 
 `upOrDown` shoud be a publicly available method that accepts a `double` and a `char` as input, and returns an `int` as output.
 
+<<<<<<< HEAD
 Given a decimal value, `number`, and a character, `operation` (representing either round, `r`, floor, `f`, or ceiling, `c`), return the result of the operation as an integer. Return -1 if the following specifcations are not met.
 * `operation` is not within the set [`r`, `f`, `c`]
+=======
+Given a decimal value, `number`, and a character, `operation` (representing either round, `r`, floor, `f`, or ceiling, `c`), return the result of the operation as an integer. Return `-1` if the following specifcations are not met.
+* `operation` must be within the set [`r`, `f`, `c`]
+>>>>>>> 94f84aa0624d00b40663713341e10cbbd624f89c
 
 ```
 upOrDown(12.7, 'r') returns 13
@@ -153,12 +167,20 @@ upOrDown(12.7, 'x') returns -1
 
 `countMe` shoud be a publicly available method that accepts a `String` and a `char` as input, and returns an `int` as output.
 
+<<<<<<< HEAD
 Given a `String`, `text`, and a character, `end`, count and return the number of words in `text` that end with `end`. For our purposes, the end of a word will be defined as an alphabetic character followed by a whitespace character (i.e., a space, tab, or line break) or no character at all (i.e., the end of the `String`). Return -1 if the following specifcations are not met.
+=======
+Given a `String`, `text`, and a character, `end`, count and return the number of words in `text` that end with `end`. For our purposes, the end of a word will be defined as an alphabetic character followed by a whitespace character (i.e., a space, tab, or line break) or no character at all (i.e., the end of the `String`). Return `-1` if the following specifcations are not met.
+>>>>>>> 94f84aa0624d00b40663713341e10cbbd624f89c
 * `text` must not be `null`
 * `end` must be in the set [`Aa-Zz`]
 
 ```
+<<<<<<< HEAD
 countMe("these are just some sample words", 'e') returns 3
+=======
+countMe("these are just some sample words", 'e') returns 4
+>>>>>>> 94f84aa0624d00b40663713341e10cbbd624f89c
 countMe(null, 'n') returns -1
 countMe("and some more sample words", '+') returns -1
 countMe("one more batch of sample words", 'h') returns 1
@@ -168,7 +190,11 @@ countMe("one more batch of sample words", 'h') returns 1
 
 `isNotEqual` shoud be a publicly available method that accepts a `String` as input, and returns a `boolean` as output.
 
+<<<<<<< HEAD
 Given a `String`, `str`, determine whether the number of case-sensitive appearances of the word `is` equals the number of case-sensitive appearances of the word `not`. Return `false` if the following specifcations are not met.
+=======
+Given a `String`, `str`, determine whether the number of case-insensitive appearances of the word `is` equals the number of case-insensitive appearances of the word `not`. Return `false` if the following specifcations are not met.
+>>>>>>> 94f84aa0624d00b40663713341e10cbbd624f89c
 * `str` must not be `null`
 
 ```
@@ -181,7 +207,11 @@ isNotEqual(null) returns false
 
 `triplets` shoud be a publicly available method that accepts a `String` as input, and returns an `int` as output.
 
+<<<<<<< HEAD
 Given a `String`, `str`, return the number of triplets. A triplet is defined as a sequence of 3 identical characters in a row. Triplets are case-sensitive, meaning `AAa` is not triplet. Triplets can also overlap, meanning `AAAA` counts as 2 triplets. Return -1 if the following specifcations are not met.
+=======
+Given a `String`, `str`, return the number of triplets. A triplet is defined as a sequence of 3 identical characters in a row. Triplets are case-sensitive, meaning `AAa` is not triplet. Triplets can also overlap, meanning `AAAA` counts as 2 triplets. Return `-1` if the following specifcations are not met.
+>>>>>>> 94f84aa0624d00b40663713341e10cbbd624f89c
 * `str` must not be `null`
 * `str` must not contain whitespace or non-alphabetic characters
 
@@ -197,15 +227,24 @@ triplets("aaa bbb") returns -1
 
 `addMe` shoud be a publicly available method that accepts a `String` and a `boolean` as input, and returns an `int` as output.
 
+<<<<<<< HEAD
 Given a `String`, `str`, compute and return either the sum of the digits or the sum of the numbers contained within `str`. If `digits` is true, then sum the digits individually. If it is false, sum the numbers. A number is defined as a 1 or more consecutive digits in `str`. Return -1 if the following specifcations are not met.
+=======
+Given a `String`, `str`, and a `boolean`, `digits`, compute and return either the sum of the digits or the sum of the numbers contained within `str`. If `digits` is true, then sum the digits individually. If it is false, sum the numbers. A number is defined as a 1 or more consecutive digits in `str`. Return `-1` if the following specifcations are not met.
+>>>>>>> 94f84aa0624d00b40663713341e10cbbd624f89c
 * `str` must not be `null`
 * `str` must not contain whitespace characters
 
 ```
 addme("a123b456c789", true) returns 45
 addMe("a123b456c789", false) returns 1368
+<<<<<<< HEAD
 addMe(null) returns -1
 addMe("abc 123 def") returns -1
+=======
+addMe(null, true) returns -1
+addMe("abc 123 def", false) returns -1
+>>>>>>> 94f84aa0624d00b40663713341e10cbbd624f89c
 ```
 
 ## Deadline
